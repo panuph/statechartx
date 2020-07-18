@@ -3,7 +3,7 @@ import setuptools
 
 setuptools.setup(
     name="statechartx",
-    version="0.0.1",
+    version="0.0.2",
     author="Panu P",
     author_email="panuph@gmail.com",
     description="A trivial extension to Python UML statechart framework",
