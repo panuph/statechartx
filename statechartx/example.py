@@ -5,8 +5,8 @@ from statechartx import TerminalState, Workflow, WorkflowFactory, WorkflowMetada
 
 
 class StateA(TerminalState):
-    """Every Workflow always has access to:
-        - the workflow factory via parameter factory in method init().
+    """Every TerminalState always has access to:
+        - the workflow metadata via self.metadata
     """
     def init(self) -> None:
         self._a = self.metadata.a
@@ -16,8 +16,8 @@ class StateA(TerminalState):
 
 
 class StateB(TerminalState):
-    """Every Workflow always has access to:
-        - the workflow factory via parameter factory in method init().
+    """Every TerminalState always has access to:
+        - the workflow metadata via self.metadata
     """
     def init(self) -> None:
         self._b = self.metadata.b
