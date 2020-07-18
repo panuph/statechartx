@@ -1,7 +1,7 @@
 # statechartx
 
 This Python package, statechartx, is a trivial extension to Leigh McKenzie's statechart, Python UML
-statechart framework.
+statechart framework (https://github.com/leighmck/statechart).
 
 This extension has introduced the concept of terminal state and workflow (or non-terminal state). A
 terminal state (class TerminalState) is equivalent to statechart's class State, which itself does
