@@ -15,6 +15,7 @@ setuptools.setup(
         "Programming Language :: Python :: 3",
         "License :: OSI Approved :: MIT License"],
     install_requires=[
+        "statechart>=0.4.2"
     ],
     zip_safe=False
 )

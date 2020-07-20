@@ -1,4 +1,5 @@
 # -*- coding: utf-8 -*-
+"""Example usage."""
 
 from statechart import Event, FinalState, InitialState, Statechart, Transition
 from statechartx import TerminalState, Workflow, WorkflowFactory, WorkflowMetadata

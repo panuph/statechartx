@@ -1,20 +1,17 @@
 # -*- coding: utf-8 -*-
-
-try:
-    from typing import Any, Type
-except ImportError:
-    pass
+"""Contains all Statechartx's classes."""
 
 from statechart import CompositeState, State
 
 
-class WorkflowMetadata(object):
+# pylint: disable=too-few-public-methods
+class WorkflowMetadata:
     """Holds shared, common data.
 
     Args:
         kwargs: The shared, common data.
     """
-    def __init__(self, **kwargs: Any) -> None:
+    def __init__(self, **kwargs: "Any") -> None:
         for key, value in kwargs.items():
             setattr(self, key, value)
 
@@ -86,7 +83,7 @@ class Workflow(CompositeState):
         raise NotImplementedError
 
 
-class WorkflowFactory(object):
+class WorkflowFactory:
     """A factory for creating terminal states and workflows.
 
     Args:
@@ -98,7 +95,7 @@ class WorkflowFactory(object):
     def create_state(self,
                      name: str,
                      context: CompositeState,
-                     type_: Type[TerminalState]) -> TerminalState:
+                     type_: "Type[TerminalState]") -> TerminalState:
         """Creates a terminal state.
 
         Args:
@@ -114,7 +111,7 @@ class WorkflowFactory(object):
     def create_workflow(self,
                         name: str,
                         context: CompositeState,
-                        type_: Type[Workflow]) -> Workflow:
+                        type_: "Type[Workflow]") -> Workflow:
         """Creates a workflow.
 
         Args:

@@ -10,12 +10,12 @@ CompositeState, which itself contains other terminal states and workflows.
 
 The goal of this extension is to simplify and ease the way a workflow is created and defined. This
 extension is by no means a layer of software on top of statechart, as the user still has to use
-statechart to achieve their goal. See the example code in example.py for example usage.
+statechart to achieve their goal.
 
 
-## Dependencies
+## Example Usage
 
-See file requirements.txt.
+See code in file example.py (https://github.com/panuph/statechartx/blob/master/statechartx/example.py).
 
 
 ## Installation
